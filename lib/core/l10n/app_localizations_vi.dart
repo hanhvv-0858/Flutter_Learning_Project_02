@@ -49,4 +49,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get homeRetry => 'Thử lại';
+
+  @override
+  String get detailTracksHeader => 'Danh sách bài hát';
+
+  @override
+  String get detailNoTracks => 'Không có bài hát nào.';
+
+  @override
+  String get detailSaved => 'Đã lưu vào Yêu thích';
+
+  @override
+  String get detailRemoved => 'Đã xóa khỏi Yêu thích';
 }

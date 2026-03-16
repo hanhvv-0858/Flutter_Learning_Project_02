@@ -46,8 +46,10 @@ class HomePage extends StatelessWidget {
                 final album = albums[index];
                 return AlbumListItem(
                   album: album,
-                  onTap: () =>
-                      context.push(RouteConstants.detailRoute(album.id)),
+                  onTap: () => context.push(
+                    RouteConstants.detailRoute(album.id),
+                    extra: album,
+                  ),
                 );
               },
             ),
