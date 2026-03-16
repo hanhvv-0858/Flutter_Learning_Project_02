@@ -16,5 +16,8 @@
   "detailTracksHeader": "Danh sách bài hát",
   "detailNoTracks": "Không có bài hát nào.",
   "detailSaved": "Đã lưu vào Yêu thích",
-  "detailRemoved": "Đã xóa khỏi Yêu thích"
+  "detailRemoved": "Đã xóa khỏi Yêu thích",
+  "favoritesTitle": "Yêu thích",
+  "favoritesEmpty": "Chưa có mục yêu thích nào. Hãy lưu album từ màn hình chi tiết!",
+  "favoritesDeleteConfirm": "Đã xóa khỏi yêu thích"
 }

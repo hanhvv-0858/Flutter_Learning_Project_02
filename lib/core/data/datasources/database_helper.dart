@@ -6,7 +6,7 @@ import 'package:sqflite/sqflite.dart';
 ///
 /// Registered as a lazy singleton in GetIt via [RegisterModule].
 class DatabaseHelper {
-  static const String _databaseName = 'music_discovery.db';
+  static const String _databaseName = 'music_discovery_01.db';
   static const int _databaseVersion = 1;
 
   Database? _database;

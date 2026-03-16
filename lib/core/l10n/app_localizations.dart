@@ -199,6 +199,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Removed from Favorites'**
   String get detailRemoved;
+
+  /// Favorites screen app bar title
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get favoritesTitle;
+
+  /// Empty state message when no favorites
+  ///
+  /// In en, this message translates to:
+  /// **'No favorites yet. Save albums from the detail screen!'**
+  String get favoritesEmpty;
+
+  /// Snackbar after swipe-to-delete
+  ///
+  /// In en, this message translates to:
+  /// **'Removed from favorites'**
+  String get favoritesDeleteConfirm;
 }
 
 class _AppLocalizationsDelegate

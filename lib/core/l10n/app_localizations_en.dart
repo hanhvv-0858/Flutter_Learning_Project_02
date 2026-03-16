@@ -61,4 +61,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailRemoved => 'Removed from Favorites';
+
+  @override
+  String get favoritesTitle => 'Favorites';
+
+  @override
+  String get favoritesEmpty =>
+      'No favorites yet. Save albums from the detail screen!';
+
+  @override
+  String get favoritesDeleteConfirm => 'Removed from favorites';
 }
