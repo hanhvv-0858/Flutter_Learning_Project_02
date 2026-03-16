@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "appTitle": "Music Discovery",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
