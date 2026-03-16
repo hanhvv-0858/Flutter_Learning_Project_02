@@ -10,4 +10,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get appTitle => 'Music Discovery';
+
+  @override
+  String get onboardingTitle1 => 'Discover Music';
+
+  @override
+  String get onboardingDesc1 =>
+      'Browse the top albums from iTunes and find your next favorite artist.';
+
+  @override
+  String get onboardingTitle2 => 'Save Your Favorites';
+
+  @override
+  String get onboardingDesc2 =>
+      'Bookmark albums you love and enjoy them offline, anytime.';
+
+  @override
+  String get onboardingTitle3 => 'Search & Explore';
+
+  @override
+  String get onboardingDesc3 =>
+      'Search millions of albums and discover something new every day.';
+
+  @override
+  String get onboardingSkip => 'Skip';
+
+  @override
+  String get onboardingNext => 'Next';
+
+  @override
+  String get onboardingGetStarted => 'Get Started';
 }

@@ -103,6 +103,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Music Discovery'**
   String get appTitle;
+
+  /// Onboarding page 1 title
+  ///
+  /// In en, this message translates to:
+  /// **'Discover Music'**
+  String get onboardingTitle1;
+
+  /// Onboarding page 1 description
+  ///
+  /// In en, this message translates to:
+  /// **'Browse the top albums from iTunes and find your next favorite artist.'**
+  String get onboardingDesc1;
+
+  /// Onboarding page 2 title
+  ///
+  /// In en, this message translates to:
+  /// **'Save Your Favorites'**
+  String get onboardingTitle2;
+
+  /// Onboarding page 2 description
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmark albums you love and enjoy them offline, anytime.'**
+  String get onboardingDesc2;
+
+  /// Onboarding page 3 title
+  ///
+  /// In en, this message translates to:
+  /// **'Search & Explore'**
+  String get onboardingTitle3;
+
+  /// Onboarding page 3 description
+  ///
+  /// In en, this message translates to:
+  /// **'Search millions of albums and discover something new every day.'**
+  String get onboardingDesc3;
+
+  /// Button to skip the onboarding tutorial
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get onboardingSkip;
+
+  /// Button to go to the next onboarding page
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get onboardingNext;
+
+  /// Button on the last onboarding page
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get onboardingGetStarted;
 }
 
 class _AppLocalizationsDelegate

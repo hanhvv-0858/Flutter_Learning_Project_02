@@ -38,7 +38,7 @@ class AlbumModel extends Album {
       artistName:
           (json['im:artist'] as Map<String, dynamic>?)?['label'] as String? ??
           '',
-      imageUrl: _upscaleImageUrl(rawImageUrl),
+      imageUrl: getUpscaledImageUrl(rawImageUrl),
       releaseDate:
           (json['im:releaseDate'] as Map<String, dynamic>?)?['label']
               as String?,
@@ -56,7 +56,7 @@ class AlbumModel extends Album {
       id: (json['collectionId'] as num?)?.toString() ?? '',
       name: json['collectionName'] as String? ?? '',
       artistName: json['artistName'] as String? ?? '',
-      imageUrl: _upscaleImageUrl(rawImageUrl),
+      imageUrl: getUpscaledImageUrl(rawImageUrl),
       releaseDate: json['releaseDate'] as String?,
       albumType: 'album',
     );
@@ -70,7 +70,7 @@ class AlbumModel extends Album {
 
   /// Replaces small image dimensions (55x55, 60x60, 100x100, 170x170)
   /// with 600x600 for high-resolution artwork display.
-  static String _upscaleImageUrl(String url) {
+  static String getUpscaledImageUrl(String url) {
     if (url.isEmpty) return url;
     return url
         .replaceAll('170x170bb', '600x600bb')
