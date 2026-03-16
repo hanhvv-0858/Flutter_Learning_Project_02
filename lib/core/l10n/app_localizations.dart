@@ -157,6 +157,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get Started'**
   String get onboardingGetStarted;
+
+  /// Home screen app bar title
+  ///
+  /// In en, this message translates to:
+  /// **'Top Albums'**
+  String get homeTitle;
+
+  /// Error message when album fetch fails
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load albums. Please try again.'**
+  String get homeErrorMessage;
+
+  /// Retry button text on home error
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get homeRetry;
 }
 
 class _AppLocalizationsDelegate

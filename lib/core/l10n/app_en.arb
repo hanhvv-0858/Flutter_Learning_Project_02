@@ -21,5 +21,11 @@
   "onboardingNext": "Next",
   "@onboardingNext": { "description": "Button to go to the next onboarding page" },
   "onboardingGetStarted": "Get Started",
-  "@onboardingGetStarted": { "description": "Button on the last onboarding page" }
+  "@onboardingGetStarted": { "description": "Button on the last onboarding page" },
+  "homeTitle": "Top Albums",
+  "@homeTitle": { "description": "Home screen app bar title" },
+  "homeErrorMessage": "Failed to load albums. Please try again.",
+  "@homeErrorMessage": { "description": "Error message when album fetch fails" },
+  "homeRetry": "Retry",
+  "@homeRetry": { "description": "Retry button text on home error" }
 }

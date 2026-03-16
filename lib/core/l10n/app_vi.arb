@@ -9,5 +9,8 @@
   "onboardingDesc3": "Tìm kiếm hàng triệu album và khám phá điều gì đó mới mỗi ngày.",
   "onboardingSkip": "Bỏ qua",
   "onboardingNext": "Tiếp theo",
-  "onboardingGetStarted": "Bắt đầu"
+  "onboardingGetStarted": "Bắt đầu",
+  "homeTitle": "Album Hàng Đầu",
+  "homeErrorMessage": "Không thể tải album. Vui lòng thử lại.",
+  "homeRetry": "Thử lại"
 }

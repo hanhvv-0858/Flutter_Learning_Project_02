@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'package:flutter/material.dart';
 
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
@@ -21,13 +22,9 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
       final isComplete = await _datasource.isOnboardingComplete();
       return Right(isComplete);
     } catch (e, st) {
-      // log(
-      //   'checkOnboardingStatus failed',
-      //   error: e,
-      //   stackTrace: st,
-      //   name: 'OnboardingRepositoryImpl',
-      // );
-      // Nếu có userId/requestId, thêm vào message/context
+      debugPrint(
+        'OnboardingRepositoryImpl.checkOnboardingStatus error: $e\n$st',
+      );
       return const Left(CacheFailure('Failed to read onboarding status'));
     }
   }
@@ -38,12 +35,7 @@ class OnboardingRepositoryImpl implements OnboardingRepository {
       await _datasource.completeOnboarding();
       return const Right(unit);
     } catch (e, st) {
-      log(
-        'completeOnboarding failed',
-        error: e,
-        stackTrace: st,
-        name: 'OnboardingRepositoryImpl',
-      );
+      debugPrint('OnboardingRepositoryImpl.completeOnboarding error: $e\n$st');
       return const Left(CacheFailure('Failed to save onboarding status'));
     }
   }
