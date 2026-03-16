@@ -3,5 +3,23 @@
   "appTitle": "Music Discovery",
   "@appTitle": {
     "description": "The title of the application"
-  }
+  },
+  "onboardingTitle1": "Discover Music",
+  "@onboardingTitle1": { "description": "Onboarding page 1 title" },
+  "onboardingDesc1": "Browse the top albums from iTunes and find your next favorite artist.",
+  "@onboardingDesc1": { "description": "Onboarding page 1 description" },
+  "onboardingTitle2": "Save Your Favorites",
+  "@onboardingTitle2": { "description": "Onboarding page 2 title" },
+  "onboardingDesc2": "Bookmark albums you love and enjoy them offline, anytime.",
+  "@onboardingDesc2": { "description": "Onboarding page 2 description" },
+  "onboardingTitle3": "Search & Explore",
+  "@onboardingTitle3": { "description": "Onboarding page 3 title" },
+  "onboardingDesc3": "Search millions of albums and discover something new every day.",
+  "@onboardingDesc3": { "description": "Onboarding page 3 description" },
+  "onboardingSkip": "Skip",
+  "@onboardingSkip": { "description": "Button to skip the onboarding tutorial" },
+  "onboardingNext": "Next",
+  "@onboardingNext": { "description": "Button to go to the next onboarding page" },
+  "onboardingGetStarted": "Get Started",
+  "@onboardingGetStarted": { "description": "Button on the last onboarding page" }
 }

@@ -1,4 +1,13 @@
 {
   "@@locale": "vi",
-  "appTitle": "Khám Phá Âm Nhạc"
+  "appTitle": "Khám Phá Âm Nhạc",
+  "onboardingTitle1": "Khám Phá Âm Nhạc",
+  "onboardingDesc1": "Duyệt qua các album hàng đầu trên iTunes và tìm nghệ sĩ yêu thích tiếp theo của bạn.",
+  "onboardingTitle2": "Lưu Yêu Thích",
+  "onboardingDesc2": "Đánh dấu các album bạn yêu thích và thưởng thức khi không có mạng.",
+  "onboardingTitle3": "Tìm Kiếm & Khám Phá",
+  "onboardingDesc3": "Tìm kiếm hàng triệu album và khám phá điều gì đó mới mỗi ngày.",
+  "onboardingSkip": "Bỏ qua",
+  "onboardingNext": "Tiếp theo",
+  "onboardingGetStarted": "Bắt đầu"
 }
