@@ -40,4 +40,13 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'Bắt đầu';
+
+  @override
+  String get homeTitle => 'Album Hàng Đầu';
+
+  @override
+  String get homeErrorMessage => 'Không thể tải album. Vui lòng thử lại.';
+
+  @override
+  String get homeRetry => 'Thử lại';
 }

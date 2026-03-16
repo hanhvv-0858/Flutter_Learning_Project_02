@@ -40,4 +40,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'Get Started';
+
+  @override
+  String get homeTitle => 'Top Albums';
+
+  @override
+  String get homeErrorMessage => 'Failed to load albums. Please try again.';
+
+  @override
+  String get homeRetry => 'Retry';
 }

@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'package:flutter/material.dart';
 
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,12 +22,9 @@ class OnboardingLocalDatasource {
     try {
       return _prefs.getBool(_kOnboardingCompleted) ?? false;
     } catch (e, st) {
-      // log(
-      //   'isOnboardingComplete failed',
-      //   error: e,
-      //   stackTrace: st,
-      //   name: 'OnboardingLocalDatasource',
-      // );
+      debugPrint(
+        'OnboardingLocalDatasource.isOnboardingComplete error: $e\n$st',
+      );
       rethrow;
     }
   }
@@ -36,12 +34,7 @@ class OnboardingLocalDatasource {
     try {
       await _prefs.setBool(_kOnboardingCompleted, true);
     } catch (e, st) {
-      // log(
-      //   'completeOnboarding failed',
-      //   error: e,
-      //   stackTrace: st,
-      //   name: 'OnboardingLocalDatasource',
-      // );
+      debugPrint('OnboardingLocalDatasource.completeOnboarding error: $e\n$st');
       rethrow;
     }
   }
