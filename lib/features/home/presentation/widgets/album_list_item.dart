@@ -38,9 +38,7 @@ class AlbumListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
     final colorScheme = Theme.of(context).colorScheme;
-    final formattedDate = _formatDate(album.releaseDate);
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
@@ -51,46 +49,13 @@ class AlbumListItem extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Row(
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: CachedImage(
-                  imageUrl: album.imageUrl,
-                  width: 80,
-                  height: 80,
-                ),
-              ),
+              _AlbumArtwork(imageUrl: album.imageUrl),
               const SizedBox(width: 12),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      album.name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      album.artistName,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: textTheme.bodyMedium?.copyWith(
-                        color: colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                    if (formattedDate.isNotEmpty) ...[
-                      const SizedBox(height: 4),
-                      Text(
-                        formattedDate,
-                        style: textTheme.bodySmall?.copyWith(
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
-                  ],
+                child: _AlbumInfo(
+                  name: album.name,
+                  artistName: album.artistName,
+                  formattedDate: _formatDate(album.releaseDate),
                 ),
               ),
               const SizedBox(width: 8),
@@ -99,6 +64,70 @@ class AlbumListItem extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Rounded album cover art — extracted to keep [AlbumListItem] nesting ≤ 4.
+class _AlbumArtwork extends StatelessWidget {
+  const _AlbumArtwork({required this.imageUrl});
+
+  final String imageUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: CachedImage(imageUrl: imageUrl, width: 80, height: 80),
+    );
+  }
+}
+
+/// Text column showing album name, artist, and release date.
+class _AlbumInfo extends StatelessWidget {
+  const _AlbumInfo({
+    required this.name,
+    required this.artistName,
+    required this.formattedDate,
+  });
+
+  final String name;
+  final String artistName;
+  final String formattedDate;
+
+  @override
+  Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          name,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          artistName,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: textTheme.bodyMedium?.copyWith(
+            color: colorScheme.onSurfaceVariant,
+          ),
+        ),
+        if (formattedDate.isNotEmpty) ...[
+          const SizedBox(height: 4),
+          Text(
+            formattedDate,
+            style: textTheme.bodySmall?.copyWith(
+              color: colorScheme.onSurfaceVariant,
+            ),
+          ),
+        ],
+      ],
     );
   }
 }

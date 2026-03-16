@@ -7,7 +7,7 @@ class ApiConstants {
   static const String rssBaseUrl = 'https://itunes.apple.com';
 
   /// Top albums RSS feed. Replace {country} and {limit}.
-  static String topAlbumsPath({String country = 'us', int limit = 50}) =>
+  static String getTopAlbumsPath({String country = 'us', int limit = 50}) =>
       '/$country/rss/topalbums/limit=$limit/json';
 
   // --- iTunes Search API ---

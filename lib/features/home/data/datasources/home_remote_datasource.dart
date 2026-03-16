@@ -22,7 +22,7 @@ class HomeRemoteDatasource {
     String country = 'us',
     int limit = 50,
   }) async {
-    final path = ApiConstants.topAlbumsPath(country: country, limit: limit);
+    final path = ApiConstants.getTopAlbumsPath(country: country, limit: limit);
 
     // Use get<dynamic> because the iTunes RSS endpoint returns
     // Content-Type: text/javascript, which Dio does not auto-decode to Map.
