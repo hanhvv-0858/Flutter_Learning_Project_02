@@ -119,9 +119,6 @@ class AppRouter {
 
   /// Redirect guard: intercepts navigation to shell tabs and sends
   /// first-time users to onboarding.
-  ///
-  /// SharedPreferences is synchronously available after [configureDependencies]
-  /// resolves it via @preResolve.
   static String? _redirect(BuildContext context, GoRouterState state) {
     final path = state.uri.path;
     final shellPaths = [
