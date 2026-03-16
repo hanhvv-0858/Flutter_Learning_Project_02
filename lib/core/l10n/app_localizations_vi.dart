@@ -61,4 +61,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get detailRemoved => 'Đã xóa khỏi Yêu thích';
+
+  @override
+  String get favoritesTitle => 'Yêu thích';
+
+  @override
+  String get favoritesEmpty =>
+      'Chưa có mục yêu thích nào. Hãy lưu album từ màn hình chi tiết!';
+
+  @override
+  String get favoritesDeleteConfirm => 'Đã xóa khỏi yêu thích';
 }

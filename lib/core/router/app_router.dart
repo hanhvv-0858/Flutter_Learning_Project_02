@@ -18,6 +18,10 @@ import 'package:example_flutter_02/features/splash/presentation/bloc/splash_cubi
 import 'package:example_flutter_02/features/splash/presentation/pages/splash_page.dart';
 import 'package:example_flutter_02/shared/bottom_nav_shell.dart';
 
+import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
+import 'package:example_flutter_02/features/favorites/presentation/pages/favorites_page.dart';
+
 /// Central GoRouter configuration for the entire app.
 ///
 /// Structure:
@@ -102,12 +106,11 @@ class AppRouter {
             routes: [
               GoRoute(
                 path: RouteConstants.favorites,
-                // Replaced in Phase 8 (T085) with the real FavoritesPage.
-                builder: (context, state) => Scaffold(
-                  appBar: AppBar(title: const Text('Favorites')),
-                  body: const Center(
-                    child: Text('Favorites — Coming in Phase 8'),
-                  ),
+                builder: (context, state) => BlocProvider(
+                  create: (_) =>
+                      getIt<FavoritesBloc>()
+                        ..add(const FavoritesLoadRequested()),
+                  child: const FavoritesPage(),
                 ),
               ),
             ],

@@ -35,5 +35,11 @@
   "detailSaved": "Saved to Favorites",
   "@detailSaved": { "description": "Snackbar message when album is saved" },
   "detailRemoved": "Removed from Favorites",
-  "@detailRemoved": { "description": "Snackbar message when album is removed" }
+  "@detailRemoved": { "description": "Snackbar message when album is removed" },
+  "favoritesTitle": "Favorites",
+  "@favoritesTitle": { "description": "Favorites screen app bar title" },
+  "favoritesEmpty": "No favorites yet. Save albums from the detail screen!",
+  "@favoritesEmpty": { "description": "Empty state message when no favorites" },
+  "favoritesDeleteConfirm": "Removed from favorites",
+  "@favoritesDeleteConfirm": { "description": "Snackbar after swipe-to-delete" }
 }
