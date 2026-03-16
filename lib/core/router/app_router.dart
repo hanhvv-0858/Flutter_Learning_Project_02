@@ -4,7 +4,11 @@ import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:example_flutter_02/core/di/injection.dart';
+import 'package:example_flutter_02/core/domain/entities/album.dart';
 import 'package:example_flutter_02/core/router/route_constants.dart';
+import 'package:example_flutter_02/features/detail/presentation/bloc/detail_bloc.dart';
+import 'package:example_flutter_02/features/detail/presentation/bloc/detail_event.dart';
+import 'package:example_flutter_02/features/detail/presentation/pages/detail_page.dart';
 import 'package:example_flutter_02/features/home/presentation/bloc/home_bloc.dart';
 import 'package:example_flutter_02/features/home/presentation/bloc/home_event.dart';
 import 'package:example_flutter_02/features/home/presentation/pages/home_page.dart';
@@ -50,13 +54,23 @@ class AppRouter {
       ),
       GoRoute(
         path: RouteConstants.detailPath,
-        // Replaced in Phase 7 (T076) with the real DetailPage.
-        builder: (context, state) => Scaffold(
-          appBar: AppBar(title: const Text('Detail')),
-          body: Center(
-            child: Text('Detail — Album ID: ${state.pathParameters['id']}'),
-          ),
-        ),
+        builder: (context, state) {
+          final album = state.extra as Album?;
+          if (album == null) {
+            return Scaffold(
+              appBar: AppBar(title: const Text('Detail')),
+              body: Center(
+                child: Text(
+                  'Album not found (ID: ${state.pathParameters['id']})',
+                ),
+              ),
+            );
+          }
+          return BlocProvider(
+            create: (_) => getIt<DetailBloc>()..add(DetailLoadRequested(album)),
+            child: DetailPage(album: album),
+          );
+        },
       ),
       GoRoute(
         path: RouteConstants.search,

@@ -12,5 +12,9 @@
   "onboardingGetStarted": "Bắt đầu",
   "homeTitle": "Album Hàng Đầu",
   "homeErrorMessage": "Không thể tải album. Vui lòng thử lại.",
-  "homeRetry": "Thử lại"
+  "homeRetry": "Thử lại",
+  "detailTracksHeader": "Danh sách bài hát",
+  "detailNoTracks": "Không có bài hát nào.",
+  "detailSaved": "Đã lưu vào Yêu thích",
+  "detailRemoved": "Đã xóa khỏi Yêu thích"
 }

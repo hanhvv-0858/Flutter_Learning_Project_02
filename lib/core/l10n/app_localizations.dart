@@ -175,6 +175,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Retry'**
   String get homeRetry;
+
+  /// Section header for track listing on detail screen
+  ///
+  /// In en, this message translates to:
+  /// **'Tracks'**
+  String get detailTracksHeader;
+
+  /// Empty state when album has no tracks
+  ///
+  /// In en, this message translates to:
+  /// **'No tracks available.'**
+  String get detailNoTracks;
+
+  /// Snackbar message when album is saved
+  ///
+  /// In en, this message translates to:
+  /// **'Saved to Favorites'**
+  String get detailSaved;
+
+  /// Snackbar message when album is removed
+  ///
+  /// In en, this message translates to:
+  /// **'Removed from Favorites'**
+  String get detailRemoved;
 }
 
 class _AppLocalizationsDelegate

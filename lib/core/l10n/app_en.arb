@@ -27,5 +27,13 @@
   "homeErrorMessage": "Failed to load albums. Please try again.",
   "@homeErrorMessage": { "description": "Error message when album fetch fails" },
   "homeRetry": "Retry",
-  "@homeRetry": { "description": "Retry button text on home error" }
+  "@homeRetry": { "description": "Retry button text on home error" },
+  "detailTracksHeader": "Tracks",
+  "@detailTracksHeader": { "description": "Section header for track listing on detail screen" },
+  "detailNoTracks": "No tracks available.",
+  "@detailNoTracks": { "description": "Empty state when album has no tracks" },
+  "detailSaved": "Saved to Favorites",
+  "@detailSaved": { "description": "Snackbar message when album is saved" },
+  "detailRemoved": "Removed from Favorites",
+  "@detailRemoved": { "description": "Snackbar message when album is removed" }
 }

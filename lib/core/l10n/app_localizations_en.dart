@@ -49,4 +49,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeRetry => 'Retry';
+
+  @override
+  String get detailTracksHeader => 'Tracks';
+
+  @override
+  String get detailNoTracks => 'No tracks available.';
+
+  @override
+  String get detailSaved => 'Saved to Favorites';
+
+  @override
+  String get detailRemoved => 'Removed from Favorites';
 }
