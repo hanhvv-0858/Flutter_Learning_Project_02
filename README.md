@@ -63,7 +63,7 @@ Sử dụng **GetIt + injectable** với code generation. Tất cả dependencie
 ```dart
 // lib/core/di/injection.dart
 @InjectableInit()
-Future<void> configureDependencies() async => getIt.init();
+Future<void> initDependencies() async => getIt.init();
 ```
 
 ### Error Handling
