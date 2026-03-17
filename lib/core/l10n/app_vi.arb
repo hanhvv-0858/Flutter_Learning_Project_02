@@ -19,5 +19,7 @@
   "detailRemoved": "Đã xóa khỏi Yêu thích",
   "favoritesTitle": "Yêu thích",
   "favoritesEmpty": "Chưa có mục yêu thích nào. Hãy lưu album từ màn hình chi tiết!",
-  "favoritesDeleteConfirm": "Đã xóa khỏi yêu thích"
+  "favoritesDeleteConfirm": "Đã xóa khỏi yêu thích",
+  "settingsTitle": "Cài đặt",
+  "settingsLanguage": "Ngôn ngữ"
 }

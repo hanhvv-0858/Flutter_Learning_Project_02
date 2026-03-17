@@ -41,5 +41,9 @@
   "favoritesEmpty": "No favorites yet. Save albums from the detail screen!",
   "@favoritesEmpty": { "description": "Empty state message when no favorites" },
   "favoritesDeleteConfirm": "Removed from favorites",
-  "@favoritesDeleteConfirm": { "description": "Snackbar after swipe-to-delete" }
+  "@favoritesDeleteConfirm": { "description": "Snackbar after swipe-to-delete" },
+  "settingsTitle": "Settings",
+  "@settingsTitle": { "description": "Settings screen app bar title" },
+  "settingsLanguage": "Language",
+  "@settingsLanguage": { "description": "Language section header in settings" }
 }
