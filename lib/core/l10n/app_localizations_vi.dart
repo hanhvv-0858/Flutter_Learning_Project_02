@@ -71,4 +71,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get favoritesDeleteConfirm => 'Đã xóa khỏi yêu thích';
+
+  @override
+  String get settingsTitle => 'Cài đặt';
+
+  @override
+  String get settingsLanguage => 'Ngôn ngữ';
 }

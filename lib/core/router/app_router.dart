@@ -9,18 +9,19 @@ import 'package:example_flutter_02/core/router/route_constants.dart';
 import 'package:example_flutter_02/features/detail/presentation/bloc/detail_bloc.dart';
 import 'package:example_flutter_02/features/detail/presentation/bloc/detail_event.dart';
 import 'package:example_flutter_02/features/detail/presentation/pages/detail_page.dart';
+import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
+import 'package:example_flutter_02/features/favorites/presentation/pages/favorites_page.dart';
 import 'package:example_flutter_02/features/home/presentation/bloc/home_bloc.dart';
 import 'package:example_flutter_02/features/home/presentation/bloc/home_event.dart';
 import 'package:example_flutter_02/features/home/presentation/pages/home_page.dart';
 import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_cubit.dart';
 import 'package:example_flutter_02/features/onboarding/presentation/pages/onboarding_page.dart';
+import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
+import 'package:example_flutter_02/features/settings/presentation/pages/settings_page.dart';
 import 'package:example_flutter_02/features/splash/presentation/bloc/splash_cubit.dart';
 import 'package:example_flutter_02/features/splash/presentation/pages/splash_page.dart';
 import 'package:example_flutter_02/shared/bottom_nav_shell.dart';
-
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
-import 'package:example_flutter_02/features/favorites/presentation/pages/favorites_page.dart';
 
 /// Central GoRouter configuration for the entire app.
 ///
@@ -119,12 +120,9 @@ class AppRouter {
             routes: [
               GoRoute(
                 path: RouteConstants.settings,
-                // Replaced in Phase 9 (T099) with the real SettingsPage.
-                builder: (context, state) => Scaffold(
-                  appBar: AppBar(title: const Text('Settings')),
-                  body: const Center(
-                    child: Text('Settings — Coming in Phase 9'),
-                  ),
+                builder: (context, state) => BlocProvider.value(
+                  value: getIt<SettingsCubit>(),
+                  child: const SettingsPage(),
                 ),
               ),
             ],

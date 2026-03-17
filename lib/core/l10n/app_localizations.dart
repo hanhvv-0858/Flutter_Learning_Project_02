@@ -217,6 +217,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Removed from favorites'**
   String get favoritesDeleteConfirm;
+
+  /// Settings screen app bar title
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settingsTitle;
+
+  /// Language section header in settings
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get settingsLanguage;
 }
 
 class _AppLocalizationsDelegate
