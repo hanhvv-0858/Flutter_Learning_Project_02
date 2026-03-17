@@ -17,6 +17,8 @@ import 'package:example_flutter_02/features/home/presentation/bloc/home_event.da
 import 'package:example_flutter_02/features/home/presentation/pages/home_page.dart';
 import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_cubit.dart';
 import 'package:example_flutter_02/features/onboarding/presentation/pages/onboarding_page.dart';
+import 'package:example_flutter_02/features/search/presentation/bloc/search_bloc.dart';
+import 'package:example_flutter_02/features/search/presentation/pages/search_page.dart';
 import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
 import 'package:example_flutter_02/features/settings/presentation/pages/settings_page.dart';
 import 'package:example_flutter_02/features/splash/presentation/bloc/splash_cubit.dart';
@@ -79,10 +81,9 @@ class AppRouter {
       ),
       GoRoute(
         path: RouteConstants.search,
-        // Replaced in Phase 10 (T110) with the real SearchPage.
-        builder: (context, state) => Scaffold(
-          appBar: AppBar(title: const Text('Search')),
-          body: const Center(child: Text('Search — Coming in Phase 10')),
+        builder: (context, state) => BlocProvider(
+          create: (_) => getIt<SearchBloc>(),
+          child: const SearchPage(),
         ),
       ),
 

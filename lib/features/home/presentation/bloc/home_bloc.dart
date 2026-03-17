@@ -8,6 +8,17 @@ import 'home_state.dart';
 
 /// BLoC that manages the home screen's album list lifecycle.
 ///
+/// 📚 CLEAN ARCHITECTURE — PRESENTATION LAYER (BLoC)
+/// The BLoC receives UI events (e.g. HomeFetchRequested) and calls
+/// use cases from the domain layer. It never directly touches datasources
+/// or repositories — only the abstract UseCase interface.
+///
+/// State flow: Event → BLoC → UseCase → Repository → Datasource
+///                               ↓
+///                          `Either<Failure, T>`
+///                               ↓
+///                     BLoC emits new State
+///
 /// Registered as a factory — a fresh instance per [BlocProvider] so
 /// each screen mount starts with a clean [HomeInitial] state.
 @injectable

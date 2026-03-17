@@ -77,4 +77,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get settingsLanguage => 'Ngôn ngữ';
+
+  @override
+  String get searchPlaceholder => 'Tìm kiếm album...';
+
+  @override
+  String get searchNoResults =>
+      'Không tìm thấy album nào. Hãy thử từ khóa khác.';
+
+  @override
+  String get searchError => 'Tìm kiếm thất bại. Vui lòng thử lại.';
 }
