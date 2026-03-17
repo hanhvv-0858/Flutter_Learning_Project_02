@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
 
 /// Data model for a single onboarding tutorial page.
 /// Strings are resolved from [AppLocalizations] so they update on locale change.

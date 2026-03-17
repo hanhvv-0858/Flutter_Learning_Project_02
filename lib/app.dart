@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'package:example_flutter_02/core/di/injection.dart';
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/core/router/app_router.dart';
-import 'package:example_flutter_02/core/theme/app_theme.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_state.dart';
+import 'package:flutter_learning_project_2/core/di/injection.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/router/app_router.dart';
+import 'package:flutter_learning_project_2/core/theme/app_theme.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_cubit.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_state.dart';
 
 /// Root application widget.
 /// Wires together routing (GoRouter), theme (AppTheme), and localization.

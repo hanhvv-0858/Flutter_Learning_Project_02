@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/get_all_favorites.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/remove_favorite.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/get_all_favorites.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/remove_favorite.dart';
 import 'favorites_event.dart';
 import 'favorites_state.dart';
 
@@ -50,7 +50,7 @@ class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {
 
     removeResult.fold(
       (failure) => log(
-        'removeFavorite failed: ${failure.message}',
+        'removeFavorite failed for albumId=${event.albumId}: ${failure.message}',
         name: 'FavoritesBloc',
       ),
       (_) {

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/core/router/route_constants.dart';
-import 'package:example_flutter_02/core/widgets/error_view.dart';
-import 'package:example_flutter_02/core/widgets/loading_view.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_state.dart';
-import 'package:example_flutter_02/features/favorites/presentation/widgets/favorite_list_item.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/router/route_constants.dart';
+import 'package:flutter_learning_project_2/core/widgets/error_view.dart';
+import 'package:flutter_learning_project_2/core/widgets/loading_view.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_event.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_state.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/widgets/favorite_list_item.dart';
 
 /// Favorites screen listing all saved albums from Sqflite.
 ///

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/widgets/cached_image.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/widgets/cached_image.dart';
 
 /// A card row in the home album list showing cover art, title, artist and date.
 class AlbumListItem extends StatelessWidget {

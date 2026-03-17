@@ -3,12 +3,12 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/search/domain/usecases/search_albums.dart';
-import 'package:example_flutter_02/features/search/presentation/bloc/search_bloc.dart';
-import 'package:example_flutter_02/features/search/presentation/bloc/search_event.dart';
-import 'package:example_flutter_02/features/search/presentation/bloc/search_state.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/search/domain/usecases/search_albums.dart';
+import 'package:flutter_learning_project_2/features/search/presentation/bloc/search_bloc.dart';
+import 'package:flutter_learning_project_2/features/search/presentation/bloc/search_event.dart';
+import 'package:flutter_learning_project_2/features/search/presentation/bloc/search_state.dart';
 
 class MockSearchAlbums extends Mock implements SearchAlbums {}
 

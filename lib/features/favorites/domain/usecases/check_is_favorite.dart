@@ -2,9 +2,9 @@ import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/favorites/domain/repositories/favorites_repository.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/repositories/favorites_repository.dart';
 
 /// Checks whether a specific album is saved as a favorite.
 @lazySingleton

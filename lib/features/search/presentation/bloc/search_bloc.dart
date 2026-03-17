@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stream_transform/stream_transform.dart';
 
-import 'package:example_flutter_02/features/search/domain/usecases/search_albums.dart';
+import 'package:flutter_learning_project_2/features/search/domain/usecases/search_albums.dart';
 import 'search_event.dart';
 import 'search_state.dart';
 

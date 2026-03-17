@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/home/domain/usecases/get_top_albums.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/home/domain/usecases/get_top_albums.dart';
 import 'home_event.dart';
 import 'home_state.dart';
 

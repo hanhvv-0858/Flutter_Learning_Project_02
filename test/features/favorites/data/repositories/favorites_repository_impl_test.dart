@@ -2,11 +2,11 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/favorites/data/datasources/favorites_local_datasource.dart';
-import 'package:example_flutter_02/features/favorites/data/models/favorite_model.dart';
-import 'package:example_flutter_02/features/favorites/data/repositories/favorites_repository_impl.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/datasources/favorites_local_datasource.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/models/favorite_model.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/repositories/favorites_repository_impl.dart';
 
 class MockFavoritesLocalDatasource extends Mock
     implements FavoritesLocalDatasource {}

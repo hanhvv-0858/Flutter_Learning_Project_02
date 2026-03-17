@@ -2,9 +2,9 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/onboarding/data/datasources/onboarding_local_datasource.dart';
-import 'package:example_flutter_02/features/onboarding/data/repositories/onboarding_repository_impl.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/onboarding/data/datasources/onboarding_local_datasource.dart';
+import 'package:flutter_learning_project_2/features/onboarding/data/repositories/onboarding_repository_impl.dart';
 
 class MockOnboardingLocalDatasource extends Mock
     implements OnboardingLocalDatasource {}

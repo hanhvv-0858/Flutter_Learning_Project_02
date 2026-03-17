@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
 
 /// Base class for all use cases in the domain layer.
 ///

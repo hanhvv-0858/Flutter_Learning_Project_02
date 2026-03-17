@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/core/router/route_constants.dart';
-import 'package:example_flutter_02/core/widgets/error_view.dart';
-import 'package:example_flutter_02/core/widgets/loading_view.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_bloc.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_event.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_state.dart';
-import 'package:example_flutter_02/features/home/presentation/widgets/album_list_item.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/router/route_constants.dart';
+import 'package:flutter_learning_project_2/core/widgets/error_view.dart';
+import 'package:flutter_learning_project_2/core/widgets/loading_view.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_bloc.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_event.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_state.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/widgets/album_list_item.dart';
 
 /// Home screen displaying the top albums from the iTunes RSS Feed.
 ///

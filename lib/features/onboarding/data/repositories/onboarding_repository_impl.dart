@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/onboarding/data/datasources/onboarding_local_datasource.dart';
-import 'package:example_flutter_02/features/onboarding/domain/repositories/onboarding_repository.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/onboarding/data/datasources/onboarding_local_datasource.dart';
+import 'package:flutter_learning_project_2/features/onboarding/domain/repositories/onboarding_repository.dart';
 
 /// Concrete implementation of [OnboardingRepository].
 /// Maps datasource results to [Either<Failure, T>] for the domain layer.

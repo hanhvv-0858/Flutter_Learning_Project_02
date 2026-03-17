@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
 
 /// Abstract contract for onboarding persistence operations.
 /// Implemented by [OnboardingRepositoryImpl] in the data layer.

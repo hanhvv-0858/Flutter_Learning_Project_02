@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:example_flutter_02/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
 
 /// A single row in the detail track listing.
 /// Shows track number, name, and formatted duration (mm:ss).

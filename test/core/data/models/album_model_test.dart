@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:example_flutter_02/core/data/models/album_model.dart';
+import 'package:flutter_learning_project_2/core/data/models/album_model.dart';
 
 void main() {
   group('AlbumModel.fromItunesRss()', () {
