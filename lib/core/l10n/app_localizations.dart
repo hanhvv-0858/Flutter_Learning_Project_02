@@ -229,6 +229,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Language'**
   String get settingsLanguage;
+
+  /// Placeholder text in search field
+  ///
+  /// In en, this message translates to:
+  /// **'Search albums...'**
+  String get searchPlaceholder;
+
+  /// Empty state when search returns no results
+  ///
+  /// In en, this message translates to:
+  /// **'No albums found. Try a different search.'**
+  String get searchNoResults;
+
+  /// Error message when search request fails
+  ///
+  /// In en, this message translates to:
+  /// **'Search failed. Please try again.'**
+  String get searchError;
 }
 
 class _AppLocalizationsDelegate

@@ -11,6 +11,18 @@ import 'package:example_flutter_02/features/home/domain/repositories/home_reposi
 
 /// Concrete implementation of [HomeRepository].
 ///
+/// 📚 CLEAN ARCHITECTURE — REPOSITORY IMPLEMENTATION
+/// This class lives in the DATA layer and implements the abstract
+/// repository interface from the DOMAIN layer. It is the single place
+/// where raw datasource exceptions (DioException, DatabaseException, etc.)
+/// are caught and translated into domain Failure types.
+///
+/// Key principles:
+/// 1. The domain layer never imports Dio, Sqflite, or any data library.
+/// 2. Error mapping happens here — the BLoC only sees `Either<Failure, T>`.
+/// 3. Registered as @LazySingleton(as: HomeRepository) so GetIt can
+///    inject the abstract type anywhere it's needed.
+///
 /// Maps datasource exceptions to domain [Failure] types so the domain
 /// and presentation layers never see Dio-specific errors.
 @LazySingleton(as: HomeRepository)

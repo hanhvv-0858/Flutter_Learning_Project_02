@@ -77,4 +77,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsLanguage => 'Language';
+
+  @override
+  String get searchPlaceholder => 'Search albums...';
+
+  @override
+  String get searchNoResults => 'No albums found. Try a different search.';
+
+  @override
+  String get searchError => 'Search failed. Please try again.';
 }

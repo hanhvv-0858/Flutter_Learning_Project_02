@@ -45,5 +45,11 @@
   "settingsTitle": "Settings",
   "@settingsTitle": { "description": "Settings screen app bar title" },
   "settingsLanguage": "Language",
-  "@settingsLanguage": { "description": "Language section header in settings" }
+  "@settingsLanguage": { "description": "Language section header in settings" },
+  "searchPlaceholder": "Search albums...",
+  "@searchPlaceholder": { "description": "Placeholder text in search field" },
+  "searchNoResults": "No albums found. Try a different search.",
+  "@searchNoResults": { "description": "Empty state when search returns no results" },
+  "searchError": "Search failed. Please try again.",
+  "@searchError": { "description": "Error message when search request fails" }
 }
