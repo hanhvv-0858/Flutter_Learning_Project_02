@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import 'package:example_flutter_02/core/network/api_constants.dart';
+import 'package:flutter_learning_project_2/core/network/api_constants.dart';
 
 /// Creates and configures the singleton [Dio] instance for the app.
 ///

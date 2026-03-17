@@ -1,4 +1,4 @@
-import 'package:example_flutter_02/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
 
 /// Data transfer object for persisting [Album] favorites in Sqflite.
 ///

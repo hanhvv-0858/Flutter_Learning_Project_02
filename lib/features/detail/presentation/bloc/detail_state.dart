@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
 
 /// States emitted by [DetailBloc] representing the detail screen lifecycle.
 sealed class DetailState {

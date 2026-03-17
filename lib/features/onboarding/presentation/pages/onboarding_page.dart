@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/core/router/route_constants.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_cubit.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_state.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/widgets/onboarding_page_item.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/widgets/tutorial_page_data.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/router/route_constants.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/bloc/onboarding_cubit.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/bloc/onboarding_state.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/widgets/onboarding_page_item.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/widgets/tutorial_page_data.dart';
 
 /// Full-screen onboarding tutorial with swipeable pages, indicator dots,
 /// Skip and Next/Get Started buttons.

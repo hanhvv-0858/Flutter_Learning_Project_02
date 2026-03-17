@@ -3,12 +3,12 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/settings/domain/usecases/change_locale.dart';
-import 'package:example_flutter_02/features/settings/domain/usecases/get_current_locale.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_state.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/settings/domain/usecases/change_locale.dart';
+import 'package:flutter_learning_project_2/features/settings/domain/usecases/get_current_locale.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_cubit.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_state.dart';
 
 class MockGetCurrentLocale extends Mock implements GetCurrentLocale {}
 

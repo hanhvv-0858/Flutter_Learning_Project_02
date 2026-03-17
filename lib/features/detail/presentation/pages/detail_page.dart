@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/core/widgets/cached_image.dart';
-import 'package:example_flutter_02/core/widgets/error_view.dart';
-import 'package:example_flutter_02/core/widgets/loading_view.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_bloc.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_event.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_state.dart';
-import 'package:example_flutter_02/features/detail/presentation/widgets/favorite_button.dart';
-import 'package:example_flutter_02/features/detail/presentation/widgets/track_list_item.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/core/widgets/cached_image.dart';
+import 'package:flutter_learning_project_2/core/widgets/error_view.dart';
+import 'package:flutter_learning_project_2/core/widgets/loading_view.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_bloc.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_event.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_state.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/widgets/favorite_button.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/widgets/track_list_item.dart';
 
 /// Album detail screen showing large artwork, metadata, favorite toggle,
 /// and the track listing from the iTunes Lookup API.

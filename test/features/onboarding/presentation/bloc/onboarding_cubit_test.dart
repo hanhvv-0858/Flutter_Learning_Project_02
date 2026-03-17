@@ -3,11 +3,11 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/onboarding/domain/usecases/complete_onboarding.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_cubit.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_state.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/onboarding/domain/usecases/complete_onboarding.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/bloc/onboarding_cubit.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/bloc/onboarding_state.dart';
 
 class MockCompleteOnboarding extends Mock implements CompleteOnboarding {}
 

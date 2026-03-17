@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/entities/track.dart';
-import 'package:example_flutter_02/features/detail/domain/usecases/get_album_tracks.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/check_is_favorite.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/remove_favorite.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/save_favorite.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/features/detail/domain/usecases/get_album_tracks.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/check_is_favorite.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/remove_favorite.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/save_favorite.dart';
 import 'detail_event.dart';
 import 'detail_state.dart';
 
@@ -73,7 +73,7 @@ class DetailBloc extends Bloc<DetailEvent, DetailState> {
       final result = await _removeFavorite(RemoveFavoriteParam(event.album.id));
       result.fold(
         (failure) => log(
-          'removeFavorite failed: ${failure.message}',
+          'removeFavorite failed for albumId=${event.album.id}: ${failure.message}',
           name: 'DetailBloc',
         ),
         (_) => emit(current.copyWith(isFavorite: false)),
@@ -81,8 +81,10 @@ class DetailBloc extends Bloc<DetailEvent, DetailState> {
     } else {
       final result = await _saveFavorite(event.album);
       result.fold(
-        (failure) =>
-            log('saveFavorite failed: ${failure.message}', name: 'DetailBloc'),
+        (failure) => log(
+          'saveFavorite failed for albumId=${event.album.id}: ${failure.message}',
+          name: 'DetailBloc',
+        ),
         (_) => emit(current.copyWith(isFavorite: true)),
       );
     }

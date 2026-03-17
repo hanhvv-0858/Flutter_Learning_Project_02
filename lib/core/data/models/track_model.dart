@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'package:example_flutter_02/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
 
 part 'track_model.g.dart';
 

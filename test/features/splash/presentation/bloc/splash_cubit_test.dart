@@ -1,8 +1,8 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:example_flutter_02/features/splash/presentation/bloc/splash_cubit.dart';
-import 'package:example_flutter_02/features/splash/presentation/bloc/splash_state.dart';
+import 'package:flutter_learning_project_2/features/splash/presentation/bloc/splash_cubit.dart';
+import 'package:flutter_learning_project_2/features/splash/presentation/bloc/splash_state.dart';
 
 void main() {
   group('SplashCubit', () {

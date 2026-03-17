@@ -3,14 +3,14 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/get_all_favorites.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/remove_favorite.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_state.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/get_all_favorites.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/remove_favorite.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_event.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_state.dart';
 
 class MockGetAllFavorites extends Mock implements GetAllFavorites {}
 

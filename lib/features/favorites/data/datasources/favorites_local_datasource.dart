@@ -1,8 +1,8 @@
 import 'package:injectable/injectable.dart';
 import 'package:sqflite/sqflite.dart';
 
-import 'package:example_flutter_02/core/data/datasources/database_helper.dart';
-import 'package:example_flutter_02/features/favorites/data/models/favorite_model.dart';
+import 'package:flutter_learning_project_2/core/data/datasources/database_helper.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/models/favorite_model.dart';
 
 /// Sqflite data source for the `favorites` table.
 ///

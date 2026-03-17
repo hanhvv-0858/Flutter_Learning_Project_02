@@ -4,8 +4,8 @@ import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/data/models/album_model.dart';
-import 'package:example_flutter_02/core/network/api_constants.dart';
+import 'package:flutter_learning_project_2/core/data/models/album_model.dart';
+import 'package:flutter_learning_project_2/core/network/api_constants.dart';
 
 /// Fetches top albums from the iTunes RSS Feed via [Dio].
 @lazySingleton

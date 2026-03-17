@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:example_flutter_02/core/l10n/app_localizations.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_state.dart';
+import 'package:flutter_learning_project_2/core/l10n/app_localizations.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_cubit.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_state.dart';
 
 /// Settings screen with language selection.
 ///

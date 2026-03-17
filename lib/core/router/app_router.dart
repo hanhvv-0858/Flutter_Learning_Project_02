@@ -3,27 +3,27 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:example_flutter_02/core/di/injection.dart';
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/router/route_constants.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_bloc.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_event.dart';
-import 'package:example_flutter_02/features/detail/presentation/pages/detail_page.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_bloc.dart';
-import 'package:example_flutter_02/features/favorites/presentation/bloc/favorites_event.dart';
-import 'package:example_flutter_02/features/favorites/presentation/pages/favorites_page.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_bloc.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_event.dart';
-import 'package:example_flutter_02/features/home/presentation/pages/home_page.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/bloc/onboarding_cubit.dart';
-import 'package:example_flutter_02/features/onboarding/presentation/pages/onboarding_page.dart';
-import 'package:example_flutter_02/features/search/presentation/bloc/search_bloc.dart';
-import 'package:example_flutter_02/features/search/presentation/pages/search_page.dart';
-import 'package:example_flutter_02/features/settings/presentation/bloc/settings_cubit.dart';
-import 'package:example_flutter_02/features/settings/presentation/pages/settings_page.dart';
-import 'package:example_flutter_02/features/splash/presentation/bloc/splash_cubit.dart';
-import 'package:example_flutter_02/features/splash/presentation/pages/splash_page.dart';
-import 'package:example_flutter_02/shared/bottom_nav_shell.dart';
+import 'package:flutter_learning_project_2/core/di/injection.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/router/route_constants.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_bloc.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_event.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/pages/detail_page.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_bloc.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/bloc/favorites_event.dart';
+import 'package:flutter_learning_project_2/features/favorites/presentation/pages/favorites_page.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_bloc.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_event.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/pages/home_page.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/bloc/onboarding_cubit.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/pages/onboarding_page.dart';
+import 'package:flutter_learning_project_2/features/search/presentation/bloc/search_bloc.dart';
+import 'package:flutter_learning_project_2/features/search/presentation/pages/search_page.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/bloc/settings_cubit.dart';
+import 'package:flutter_learning_project_2/features/settings/presentation/pages/settings_page.dart';
+import 'package:flutter_learning_project_2/features/splash/presentation/bloc/splash_cubit.dart';
+import 'package:flutter_learning_project_2/features/splash/presentation/pages/splash_page.dart';
+import 'package:flutter_learning_project_2/shared/bottom_nav_shell.dart';
 
 /// Central GoRouter configuration for the entire app.
 ///

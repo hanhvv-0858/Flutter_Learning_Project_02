@@ -3,8 +3,8 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/onboarding/domain/usecases/complete_onboarding.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/onboarding/domain/usecases/complete_onboarding.dart';
 import 'onboarding_state.dart';
 
 /// Manages onboarding tutorial page navigation and completion.

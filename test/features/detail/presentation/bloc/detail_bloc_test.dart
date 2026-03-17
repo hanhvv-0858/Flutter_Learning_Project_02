@@ -3,16 +3,16 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/entities/track.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/detail/domain/usecases/get_album_tracks.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_bloc.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_event.dart';
-import 'package:example_flutter_02/features/detail/presentation/bloc/detail_state.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/check_is_favorite.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/remove_favorite.dart';
-import 'package:example_flutter_02/features/favorites/domain/usecases/save_favorite.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/detail/domain/usecases/get_album_tracks.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_bloc.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_event.dart';
+import 'package:flutter_learning_project_2/features/detail/presentation/bloc/detail_state.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/check_is_favorite.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/remove_favorite.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/usecases/save_favorite.dart';
 
 class MockGetAlbumTracks extends Mock implements GetAlbumTracks {}
 

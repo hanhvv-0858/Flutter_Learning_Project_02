@@ -3,11 +3,11 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/data/models/album_model.dart';
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/home/data/datasources/home_remote_datasource.dart';
-import 'package:example_flutter_02/features/home/data/repositories/home_repository_impl.dart';
+import 'package:flutter_learning_project_2/core/data/models/album_model.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/home/data/datasources/home_remote_datasource.dart';
+import 'package:flutter_learning_project_2/features/home/data/repositories/home_repository_impl.dart';
 
 class MockHomeRemoteDatasource extends Mock implements HomeRemoteDatasource {}
 

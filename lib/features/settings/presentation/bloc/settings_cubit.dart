@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/settings/domain/usecases/change_locale.dart';
-import 'package:example_flutter_02/features/settings/domain/usecases/get_current_locale.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/settings/domain/usecases/change_locale.dart';
+import 'package:flutter_learning_project_2/features/settings/domain/usecases/get_current_locale.dart';
 import 'settings_state.dart';
 
 /// Cubit managing the app-wide locale preference.

@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/favorites/data/datasources/favorites_local_datasource.dart';
-import 'package:example_flutter_02/features/favorites/data/models/favorite_model.dart';
-import 'package:example_flutter_02/features/favorites/domain/repositories/favorites_repository.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/datasources/favorites_local_datasource.dart';
+import 'package:flutter_learning_project_2/features/favorites/data/models/favorite_model.dart';
+import 'package:flutter_learning_project_2/features/favorites/domain/repositories/favorites_repository.dart';
 
 /// Concrete implementation of [FavoritesRepository].
 ///

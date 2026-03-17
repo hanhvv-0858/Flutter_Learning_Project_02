@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:example_flutter_02/features/onboarding/presentation/widgets/tutorial_page_data.dart';
+import 'package:flutter_learning_project_2/features/onboarding/presentation/widgets/tutorial_page_data.dart';
 
 /// Displays a single onboarding tutorial page with an icon, title, and body.
 class OnboardingPageItem extends StatelessWidget {

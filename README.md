@@ -95,7 +95,7 @@ sealed class Failure extends Equatable {
 
 ```bash
 git clone <repo-url>
-cd example_flutter_02
+cd flutter_learning_project_2
 ```
 
 ### 2. Cài đặt dependencies

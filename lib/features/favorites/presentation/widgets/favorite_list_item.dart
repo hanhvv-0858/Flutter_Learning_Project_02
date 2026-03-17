@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/widgets/cached_image.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/widgets/cached_image.dart';
 
 /// A single row in the favorites list, wrapped in [Dismissible] for
 /// swipe-to-delete functionality.
@@ -40,35 +40,12 @@ class FavoriteListItem extends StatelessWidget {
             padding: const EdgeInsets.all(8),
             child: Row(
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: CachedImage(
-                    imageUrl: album.imageUrl,
-                    width: 64,
-                    height: 64,
-                  ),
-                ),
+                _FavoriteArtwork(imageUrl: album.imageUrl),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        album.name,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.titleSmall,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        album.artistName,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
+                  child: _FavoriteInfo(
+                    name: album.name,
+                    artistName: album.artistName,
                   ),
                 ),
                 Icon(
@@ -80,6 +57,55 @@ class FavoriteListItem extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Rounded album cover art — extracted to keep [FavoriteListItem] nesting ≤ 4.
+class _FavoriteArtwork extends StatelessWidget {
+  const _FavoriteArtwork({required this.imageUrl});
+
+  final String imageUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: CachedImage(imageUrl: imageUrl, width: 64, height: 64),
+    );
+  }
+}
+
+/// Album name and artist text column.
+class _FavoriteInfo extends StatelessWidget {
+  const _FavoriteInfo({required this.name, required this.artistName});
+
+  final String name;
+  final String artistName;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          name,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: theme.textTheme.titleSmall,
+        ),
+        const SizedBox(height: 4),
+        Text(
+          artistName,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ],
     );
   }
 }

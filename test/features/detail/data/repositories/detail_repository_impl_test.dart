@@ -3,11 +3,11 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/data/models/track_model.dart';
-import 'package:example_flutter_02/core/domain/entities/track.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/features/detail/data/datasources/detail_remote_datasource.dart';
-import 'package:example_flutter_02/features/detail/data/repositories/detail_repository_impl.dart';
+import 'package:flutter_learning_project_2/core/data/models/track_model.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/track.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/features/detail/data/datasources/detail_remote_datasource.dart';
+import 'package:flutter_learning_project_2/features/detail/data/repositories/detail_repository_impl.dart';
 
 class MockDetailRemoteDatasource extends Mock
     implements DetailRemoteDatasource {}

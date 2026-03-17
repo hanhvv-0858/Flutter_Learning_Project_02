@@ -3,13 +3,13 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:example_flutter_02/core/domain/entities/album.dart';
-import 'package:example_flutter_02/core/domain/failure/failure.dart';
-import 'package:example_flutter_02/core/domain/usecase/usecase.dart';
-import 'package:example_flutter_02/features/home/domain/usecases/get_top_albums.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_bloc.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_event.dart';
-import 'package:example_flutter_02/features/home/presentation/bloc/home_state.dart';
+import 'package:flutter_learning_project_2/core/domain/entities/album.dart';
+import 'package:flutter_learning_project_2/core/domain/failure/failure.dart';
+import 'package:flutter_learning_project_2/core/domain/usecase/usecase.dart';
+import 'package:flutter_learning_project_2/features/home/domain/usecases/get_top_albums.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_bloc.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_event.dart';
+import 'package:flutter_learning_project_2/features/home/presentation/bloc/home_state.dart';
 
 class MockGetTopAlbums extends Mock implements GetTopAlbums {}
 
