@@ -1,4 +1,5 @@
 # Music Discovery 🎵
+<img width="312" height="680" alt="simulator_screenshot_B4BAD6B9-62C6-4A40-93B0-E7F86BAA1A0E" src="https://github.com/user-attachments/assets/991450a9-1044-4abf-b621-d8ef0ebf1f88" />
 
 Ứng dụng mobile học Flutter, sử dụng **iTunes API** (miễn phí, không cần xác thực) để khám phá và lưu trữ album âm nhạc. Dự án được xây dựng theo kiến trúc **Clean Architecture 3 tầng** (Domain → Data → Presentation) với BLoC pattern.
 
